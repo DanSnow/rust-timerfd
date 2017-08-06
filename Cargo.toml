@@ -1,0 +1,12 @@
+[package]
+name = "timerfd"
+description = "A wrapper around linux timerfd"
+version = "0.1.0"
+authors = ["DanSnow <dododavid006@gmail.com>"]
+license = "MIT"
+
+[dependencies]
+bitflags = "^0.9.1"
+libc = "^0.2.29"
+nix = "^0.9.0"
+
