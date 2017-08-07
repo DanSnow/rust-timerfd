@@ -4,6 +4,11 @@ description = "A wrapper around linux timerfd"
 version = "0.1.0"
 authors = ["DanSnow <dododavid006@gmail.com>"]
 license = "MIT"
+readme = "Readme.md"
+homepage = "https://github.com/DanSnow/rust-timerfd"
+repository = "https://github.com/DanSnow/rust-timerfd"
+documentation = "https://docs.rs/timerfd"
+categories = ["os::unix-apis"]
 
 [dependencies]
 bitflags = "^0.9.1"
