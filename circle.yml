@@ -9,6 +9,8 @@ dependencies:
     - "~/.cargo"
   override:
     - "[ -f ~/.cargo/bin/cargo ] || curl https://sh.rustup.rs -sSf | sh -s -- -y"
+    - "rustup default stable"
+    - "rustup update"
 test:
   override:
     - cargo test
