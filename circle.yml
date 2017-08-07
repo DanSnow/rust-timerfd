@@ -5,7 +5,7 @@ dependencies:
   cache_directories:
     - "~/.cargo"
   override:
-    - "[ -f ~/.cargo/bin/cargo ] || curl https://sh.rustup.rs -sSf | sh /dev/stdin --yes"
+    - "[ -f ~/.cargo/bin/cargo ] || curl https://sh.rustup.rs -sSf | sh"
 test:
   override:
     - cargo test
