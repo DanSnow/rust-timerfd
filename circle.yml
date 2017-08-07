@@ -1,0 +1,11 @@
+machine:
+  environment:
+    PATH: "${PATH}:${HOME}/.cargo/bin"
+dependencies:
+  cache_directories:
+    - "~/.cargo"
+  override:
+    - "[ -f ~/.cargo/bin/cargo ] || curl https://sh.rustup.rs -sSf | sh /dev/stdin --yes"
+test:
+  override:
+    - cargo test
