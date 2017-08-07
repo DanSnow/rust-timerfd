@@ -1,6 +1,9 @@
 machine:
   environment:
     PATH: "${PATH}:${HOME}/.cargo/bin"
+  pre:
+    # This will fix cargo's malformed url problem
+    - sed -i 's/github/git-non-exist-hub/g' ~/.gitconfig
 dependencies:
   cache_directories:
     - "~/.cargo"
